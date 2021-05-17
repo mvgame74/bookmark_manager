@@ -10,5 +10,10 @@ class BookmarkManager < Sinatra::Base
     'Bookmark Manager'
   end
 
+  get '/bookmarks' do
+    @bookmarks = ["gov.uk","twitter.com","facebook.com","youtube.com"]
+    erb :bookmarks
+  end
+
   run! if app_file == $0
 end
