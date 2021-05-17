@@ -1,0 +1,1 @@
+CREATE TABLE bookmarts(id SERIAL PRIMARY KEY, url VARCHAR(60));
