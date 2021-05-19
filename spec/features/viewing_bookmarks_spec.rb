@@ -6,9 +6,9 @@ feature 'Viewing bookmarks' do
     connection = PG.connect(dbname: 'bookmark_manager_test')
 
     # Add the test data
-    connection.exec("INSERT INTO bookmarks VALUES(10, 'http://www.makersacademy.com');")
-    connection.exec("INSERT INTO bookmarks VALUES(11, 'http://www.destroyallsoftware.com');")
-    connection.exec("INSERT INTO bookmarks VALUES(12, 'http://www.google.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(15, 'http://www.makersacademy.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(16, 'http://www.destroyallsoftware.com');")
+    connection.exec("INSERT INTO bookmarks VALUES(17, 'http://www.google.com');")
 
     visit('/bookmarks')
 
