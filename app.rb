@@ -12,12 +12,16 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks/new' do
-    erb :"/bookmark/new"
+    erb :"/bookmarks/new"
   end
-
-  post '/bookmarks/new' do
-    p params
-    p "Form data submitted to the /bookmarks route!"
+  
+  post '/bookmarks' do
+    Bookmark.create(url: params[:url])
+    redirect '/bookmarks'
+    # url = params['url']
+    # connection = PG.connect(dbname: 'bookmark_manager_test')
+    # connection.exec("INSERT INTO bookmarks (url) VALUES('#{url}')")
+    # redirect '/bookmarks'
   end
  
   get '/bookmarks' do
