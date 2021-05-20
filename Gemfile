@@ -9,5 +9,8 @@ gem 'rspec'
 gem 'capybara'
 gem 'sinatra-contrib'
 gem 'pg'
+gem 'rack'
+gem 'webrick'
+gem 'byebug'
 
 # gem "rails"

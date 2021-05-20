@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    byebug (11.1.3)
     capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
@@ -53,6 +54,7 @@ GEM
       sinatra (= 2.1.0)
       tilt (~> 2.0)
     tilt (2.0.10)
+    webrick (1.7.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
@@ -60,11 +62,14 @@ PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
+  byebug
   capybara
   pg
+  rack
   rspec
   sinatra
   sinatra-contrib
+  webrick
 
 BUNDLED WITH
    2.2.3
